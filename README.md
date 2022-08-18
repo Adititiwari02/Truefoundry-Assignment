@@ -16,6 +16,10 @@ However on clicking sign in I am getting 500 internal server error. Haven't been
 I also have the option to connect with the mongodb database inside the application but currently not using it. 
 
 ### Screenshots from app:
+<p float="left">
+  <img src="/imgs/screenshot1.png" width=400 height=300 />
+  <img src="/imgs/screenshot2.png" width=400 height=300/>
+</p>
 
 ### How to run locally:
 1. clone the repo
