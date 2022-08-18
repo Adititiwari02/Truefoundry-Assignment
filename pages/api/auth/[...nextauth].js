@@ -1,7 +1,7 @@
 import NextAuth from "next-auth/next";
 import GithubProvider from "next-auth/providers/github";
-import clientPromise from "../../../database/connectDB";
-import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
+// import clientPromise from "../../../database/connectDB";
+// import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
 
 export default NextAuth({
   providers: [
@@ -26,5 +26,5 @@ export default NextAuth({
       return session;
     },
   },
-  adapter: MongoDBAdapter(clientPromise),
+  // adapter: MongoDBAdapter(clientPromise),
 });
