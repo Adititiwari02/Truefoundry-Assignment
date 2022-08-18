@@ -22,8 +22,9 @@ I also have the option to connect with the mongodb database inside the applicati
 </p>
 
 ### How to run locally:
-1. clone the repo
-2. cd into the repo
-3. run the command:  npm install
-4. run the command: npm run dev
-5. open http://localhost:3000/
+1. clone the repo: ```git clone https://github.com/Adititiwari02/Truefoundry-Assignment.git```
+2. cd into the repo: ```cd Truefoundry-Assignment```
+3. run the command:  ```npm install```
+4. create .env.local file and store client id and client secret there. You ll have to create a oauth app on github.
+5. run the command: ```npm run dev```
+6. see app on http://localhost:3000/
