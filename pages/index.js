@@ -17,7 +17,7 @@ export default function Home() {
     }
     return id;
   }
-
+  // Find the number of repositories for a user
   async function repoDataURL() {
     var userId = getUserIdFromImageURL(session.user.image);
     await fetch(`https://api.github.com/user/${userId}/repos`)
@@ -41,6 +41,7 @@ export default function Home() {
       );
   }
 
+  // Take the input for repo name and description
   function useInput({ type, placeholder }) {
     const [value, setValue] = useState("");
     const input = (
@@ -54,7 +55,6 @@ export default function Home() {
     );
     return [value, input];
   }
-
   const [repoName, repoNameInput] = useInput({
     type: "text",
     placeholder: "Enter Repo Name",
@@ -64,6 +64,7 @@ export default function Home() {
     placeholder: "Enter Repo Description",
   });
 
+  // Add the repo on clicking save
   async function addRepo() {
     const url = "https://api.github.com/user/repos";
     const token = session.accessToken;
