@@ -25,9 +25,10 @@ export default function Home() {
       .then(
         (result) => {
           const list = result.map((item) => (
+            // eslint-disable-next-line react/jsx-key
             <div className="text-center">
               {console.log(item.name)}
-              <a target="_blank" href={item.svn_url}>
+              <a target="_blank" href={item.svn_url} rel="noreferrer">
                 {item.name}
               </a>
             </div>
