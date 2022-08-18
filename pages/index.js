@@ -95,7 +95,6 @@ export default function Home() {
 
       {session && (
         <>
-          {console.log(JSON.stringify(session))};
           <button className={styles.button} onClick={() => signOut()}>
             Sign out ({session.user.name})
           </button>
